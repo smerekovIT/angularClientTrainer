@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#list-component {
+    width: 50%;
+    margin-right: 2%;
+}
+.all-client {
+    display: flex;
+  flex-direction: column;
+}
+
+.one-client {
+    width: 50%;
+    border-bottom: 2px solid black;
+    margin: 10px;
+}

@@ -1,0 +1,20 @@
+<div class='container'>
+<div id='search-component'>
+<h4>Client Search</h4>
+
+<input #searchBox id='search-box' (keyup)='search(searchBox.value)'>
+
+
+<div class='search-result'>
+  <div class='one-result' *ngFor='let client of clients$ | async' (click)='onSelect(client)'>
+      <img src='{{client.general.avatar}}' alt='{{client.general.firstName}}'>
+  <p> <span>NAME:</span> {{client.general.firstName}}</p>
+  <p><span>COMPANY:</span> {{client.job.title}}</p>
+  </div>
+</div>
+
+
+</div>
+<app-client-detail [client]='selectedClient'></app-client-detail> 
+</div>
+

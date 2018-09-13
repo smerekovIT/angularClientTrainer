@@ -1,0 +1,19 @@
+
+<div class='container'>
+  <div id='list-component'>
+  <h4>Clients</h4>
+  
+  
+  
+  <div class='all-client'>
+    <div class='one-client' *ngFor='let client of clients$ | async' (click)='onSelect(client)'>
+        <img src='{{client.general.avatar}}' alt='{{client.general.firstName}}'>
+    <p> <span>NAME:</span> {{client.general.firstName}}</p>
+    <p><span>COMPANY:</span> {{client.job.title}}</p>
+    </div>
+  </div>
+  
+  
+  </div>
+  <app-client-detail [client]='selectedClient'></app-client-detail> 
+  </div>

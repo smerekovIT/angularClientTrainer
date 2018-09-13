@@ -1,0 +1,27 @@
+<div *ngIf='client'>
+<div>
+<h3>General</h3>
+<img src='{{client.general.avatar}}'>
+<p><span>Name:</span> {{client.general.firstName}}</p>
+<p><span>Surname:</span> {{client.general.lastName}}</p>
+</div>
+<div>
+    <h3>Job</h3>
+    <p><span>Company:</span> {{client.job.company}}</p>
+    <p><span>Title:</span> {{client.job.title}}</p>
+</div>
+<div>
+    <h3>Contact</h3>
+    <p><span>Email:</span> {{client.contact.email}}</p>
+    <p><span>Phone:</span> {{client.contact.phone}}</p>
+</div>
+<div>
+<h3>Address</h3>
+<p><span>Street:</span> {{client.address.street}}</p>
+<p><span>City:</span> {{client.address.city}}</p>
+<p><span>zipCode:</span> {{client.address.zipCode}}</p>
+<p><span>Country:</span> {{client.address.country}}</p>
+</div> 
+
+
+</div>
